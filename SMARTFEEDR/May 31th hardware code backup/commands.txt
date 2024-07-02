@@ -1,0 +1,9 @@
+This is how to get everything set up (go in order): 
+
+gcc Dispenser.c -o Dispenser -lpigpio -lrt -pthread
+gcc -o FoodLevelSensor FoodLevelSensor.c -lwiringPi -lgpiod
+gcc -o WaterLevelSensor WaterLevelSensor.c -lgpiod
+gcc -o camera_view1 camera_view1.c
+
+gcc -o Controller Controller.c
+./Controller
