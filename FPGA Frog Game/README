@@ -1,1 +1,47 @@
+We designed and implemented a game similar to “Frog Frenzy” using the BASYS3 board and VGA monitor. The frog has to jump over and dive under plant obstacles to earn points. The buttons D and U are used for diving down and jumping up respectively, The frog starts off in the middle and returns to middle after it goes up 3 pixels per frame for 32 frames. The frog is shown as a 16 by 16 pixel white square and the plants are shown as 40 by 92 pixel green rectangles. The game begins when you press button C and the game resets with button R. 
+Design:
+VGA controller 
+The VGA controller is one of the most crucial components of this lab because it outputs the Hsync and Vsync signals, provides pixel address, and indicates the active region when displaying colors on screen. This VGA controller is essential for position, movement, and color of the plants, frog, and water. It is also where the borders are set. I called the VGA controller module in the top level module in order to use the Hsync, Vsync, vgaRed, vgaBlue, vgaGreen, Vertical pixel, Horizontal pixel, and active outputs for my other modules. I used two 16 bit up and down counters, one for the horizontal and another for the vertical pixels. I utilized the Vsync as an input into one flip flop in order to make my frame. I then used that frame into the frame counter which allowed me to be able to make twosec and halfsec, which I ended up using for my plant, my frog state and for the blinking function for the frog and seven segment display. I also used the frame to create my threepixeperframe, which was essential to the frog and plant’s  movement speed. I used the active output, which lets me know that the pixels of the objects are in the active region of the frame, in order to determine that the frog, water, and plants position is in the active region. The VGA controller had an impact on almost every module in this project. 
+Frog (Frog positioning/movement and the state machine)
+I created this frog module to include the frog’s position and movement counter. I even included the two 4 bit counters in order to create the 32 frame counter, which is used to limit the frog’s movement. I made a different module in the same file called frogstate and it includes the state machine that I used for the whole game. Inside this state machine, I included 8 states: IDLE, New Game, Middle, Jump Up, Jump Down, Dive Down, Dive Up, and hit. I used one hot encoding in order to make this state machine. The equations are down below: 
+                //idle
+    assign D[0] = Q[0] & ~btnC; 
+    //New Game
+    assign D[1] = (Q[0] & btnC) | (Q[1] & ~twosec) | (Q[7] & btnC);
+    //Middle
+    assign D[2] = (Q[1] & twosec) | (Q[4] & frame32 & ~hit) | (Q[6] & frame32 & ~hit) | 
+    (Q[2] & ~btnU & ~btnD & ~hit);
+    //Jump Up
+    assign D[3] = (Q[2] & btnU & ~hit) | (Q[3] & ~frame32 & ~hit);
+    //Jump Down 
+    assign D[4] = (Q[3] & frame32 & ~hit) | (Q[4] & ~frame32 & ~hit);
+    //Dive Down
+    assign D[5] = (Q[2] & btnD & ~hit) | (Q[5] & ~frame32 & ~hit);
+    //Dive Up
+    assign D[6] = (Q[5] & frame32 & ~hit) | (Q[6] & ~frame32 & ~hit);
+    //hit
+    assign D[7] = (Q[2] | Q[3] | Q[4] | Q[5] | Q[6]) & hit | (Q[7] & ~btnC);
+
+I had 11 outputs that I use throughout the whole lab since the plant, frog, and blinking function has to be synchronized together. There is reset, stop, idle, runGame, jumpdown, divedown, jumpup, diveup, newGame, frogstates, and frogBlink. 
+assign reset = (Q[7] & btnC) |(Q[2] & btnU & ~hit) | (Q[3] & frame32 & ~hit) | (Q[2] & btnD & ~hit) | (Q[5] & frame32 & ~hit) | (Q[0] & btnC);
+    assign stop = Q[7]; 
+    assign idle = Q[0]; 
+    assign runGame = ~btnR & ~hit & (Q[2] | Q[3] | Q[4] | Q[5] | Q[6]); 
+    assign jumpdown = Q[4] & ~hit & ~frame32;
+    assign divedown = Q[5] & ~hit & ~frame32; 
+    assign jumpup = Q[3] & ~hit & ~frame32; 
+    assign diveup = Q[6] & ~hit & ~frame32; 
+    assign newGame = Q[1]; 
+    
+    assign frogstates = Q; 
+    assign frogBlink = (Q[7] & ~btnC) | (Q[1]);
+Plants (includes the randomizer and plant positioning/movement)
+The plant module file includes both plant position and horizontal movement and the randomizer that randomly determines the vertical position of the green plants. I called the random number module three times, each one for the three plants. The plant module includes three count 16 bit up and down counters for each plant. It is what moves the plants horizontally. Also in the plant module, I included the score detector and counter. I used the plants location to determine if the frog successfully avoided the plant if the plant was located past the frog’s horizontal position. The randomizer function of the vertical position was created through an array that I made. I put in the variety of vertical positions ranging from (-28 to 28). 
+Water: 
+The water covers the bottom half of the screen and it is colored in a blue gradient. The red and green rgb channels are zero and as the vertical axis goes up from the middle (y = 240), the value of the rgb blue changes. It goes from bright blue to very dark blue. The water does not move throughout the game, however it is essential to the game design. 
+Top Level
+The toplevel is the glue that holds every module together. In the top level I call the VGA controller, count16UDL (used to create twosec and halfsec), frog, plants, and water modules. In the top level I create an output called contacted, which is used to tell if the frog and plant collided with each other. The vgaRGB outputs are assigned to either frog, water, or plant depending on the conditions or needs. 
+Testing & Simulation:
+ How did you test your design to make sure it worked? Why did you choose those inputs? Were there corner cases you needed to consider? Discuss problems that you discovered during testing.
+I tested my design by first using the given simulation file for the VGA controller, then I went on to create failed simulation files for my frog module, so I resorted to generating bitstream everytime I wanted to test out something I changed. When I was making this project, I had issues with creating effective simulations since I wasn’t quite sure what I was looking out for in the beginning. I was unable to get useful feedback from my own simulations so I just proceeded to fix errors by looking over my logic and planning and redoing my state machine several times. This was indeed the toughest lab to do and it took me hours of trial and error to get the right results. 
 
