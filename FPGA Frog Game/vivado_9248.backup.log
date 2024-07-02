@@ -1,0 +1,1131 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat May 28 15:20:46 2022
+# Process ID: 9248
+# Current directory: C:/Users/dlee154/Downloads/Lab7.xpr/Lab7
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6324 C:\Users\dlee154\Downloads\Lab7.xpr\Lab7\Lab7.xpr
+# Log file: C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/vivado.log
+# Journal file: C:/Users/dlee154/Downloads/Lab7.xpr/Lab7\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/yokee/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-10148-DESKTOP-IGECIF9/PrjAr/_X_' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 818.551 ; gain = 201.391
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat May 28 15:21:31 2022] Launched synth_1...
+Run output will be captured here: C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/synth_1/runme.log
+[Sat May 28 15:21:31 2022] Launched impl_1...
+Run output will be captured here: C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A2835AA
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/impl_1/toplevel.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat May 28 15:25:54 2022] Launched synth_1...
+Run output will be captured here: C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/synth_1/runme.log
+[Sat May 28 15:25:54 2022] Launched impl_1...
+Run output will be captured here: C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/impl_1/toplevel.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/impl_1/toplevel.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat May 28 15:34:08 2022] Launched synth_1...
+Run output will be captured here: C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/synth_1/runme.log
+[Sat May 28 15:34:09 2022] Launched impl_1...
+Run output will be captured here: C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/impl_1/toplevel.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat May 28 15:39:24 2022] Launched synth_1...
+Run output will be captured here: C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/synth_1/runme.log
+[Sat May 28 15:39:24 2022] Launched impl_1...
+Run output will be captured here: C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/impl_1/toplevel.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat May 28 15:43:43 2022] Launched synth_1...
+Run output will be captured here: C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/synth_1/runme.log
+[Sat May 28 15:43:43 2022] Launched impl_1...
+Run output will be captured here: C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat May 28 15:44:51 2022] Launched synth_1...
+Run output will be captured here: C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/synth_1/runme.log
+[Sat May 28 15:44:51 2022] Launched impl_1...
+Run output will be captured here: C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/impl_1/toplevel.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat May 28 15:52:21 2022] Launched synth_1...
+Run output will be captured here: C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/synth_1/runme.log
+[Sat May 28 15:52:21 2022] Launched impl_1...
+Run output will be captured here: C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/impl_1/toplevel.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat May 28 16:06:25 2022] Launched synth_1...
+Run output will be captured here: C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/synth_1/runme.log
+[Sat May 28 16:06:25 2022] Launched impl_1...
+Run output will be captured here: C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+open_run: Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 2294.441 ; gain = 212.035
+INFO: [Common 17-344] 'open_run' was cancelled
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/impl_1/toplevel.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat May 28 16:10:51 2022] Launched synth_1...
+Run output will be captured here: C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/synth_1/runme.log
+[Sat May 28 16:10:52 2022] Launched impl_1...
+Run output will be captured here: C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/impl_1/toplevel.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat May 28 16:23:26 2022] Launched synth_1...
+Run output will be captured here: C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/synth_1/runme.log
+[Sat May 28 16:23:27 2022] Launched impl_1...
+Run output will be captured here: C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat May 28 16:24:46 2022] Launched synth_1...
+Run output will be captured here: C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/synth_1/runme.log
+[Sat May 28 16:24:47 2022] Launched impl_1...
+Run output will be captured here: C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/impl_1/toplevel.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat May 28 16:33:39 2022] Launched synth_1...
+Run output will be captured here: C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/synth_1/runme.log
+[Sat May 28 16:33:39 2022] Launched impl_1...
+Run output will be captured here: C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/impl_1/toplevel.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat May 28 16:37:42 2022] Launched synth_1...
+Run output will be captured here: C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/synth_1/runme.log
+[Sat May 28 16:37:42 2022] Launched impl_1...
+Run output will be captured here: C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/impl_1/toplevel.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat May 28 16:42:30 2022] Launched synth_1...
+Run output will be captured here: C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/synth_1/runme.log
+[Sat May 28 16:42:30 2022] Launched impl_1...
+Run output will be captured here: C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat May 28 16:42:45 2022] Launched synth_1...
+Run output will be captured here: C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/synth_1/runme.log
+[Sat May 28 16:42:45 2022] Launched impl_1...
+Run output will be captured here: C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/impl_1/toplevel.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat May 28 16:45:31 2022] Launched synth_1...
+Run output will be captured here: C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/synth_1/runme.log
+[Sat May 28 16:45:31 2022] Launched impl_1...
+Run output will be captured here: C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/impl_1/toplevel.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat May 28 17:34:40 2022] Launched synth_1...
+Run output will be captured here: C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/synth_1/runme.log
+[Sat May 28 17:34:40 2022] Launched impl_1...
+Run output will be captured here: C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/impl_1/toplevel.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat May 28 17:45:09 2022] Launched synth_1...
+Run output will be captured here: C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/synth_1/runme.log
+[Sat May 28 17:45:09 2022] Launched impl_1...
+Run output will be captured here: C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat May 28 17:48:01 2022] Launched synth_1...
+Run output will be captured here: C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/synth_1/runme.log
+[Sat May 28 17:48:01 2022] Launched impl_1...
+Run output will be captured here: C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/impl_1/toplevel.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/impl_1/toplevel.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat May 28 17:55:10 2022] Launched synth_1...
+Run output will be captured here: C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/synth_1/runme.log
+[Sat May 28 17:55:10 2022] Launched impl_1...
+Run output will be captured here: C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/impl_1/toplevel.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat May 28 17:58:51 2022] Launched synth_1...
+Run output will be captured here: C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/synth_1/runme.log
+[Sat May 28 17:58:51 2022] Launched impl_1...
+Run output will be captured here: C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/impl_1/toplevel.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat May 28 18:04:41 2022] Launched synth_1...
+Run output will be captured here: C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/synth_1/runme.log
+[Sat May 28 18:04:41 2022] Launched impl_1...
+Run output will be captured here: C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat May 28 18:07:38 2022] Launched synth_1...
+Run output will be captured here: C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/synth_1/runme.log
+[Sat May 28 18:07:38 2022] Launched impl_1...
+Run output will be captured here: C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat May 28 18:16:31 2022] Launched synth_1...
+Run output will be captured here: C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/synth_1/runme.log
+[Sat May 28 18:16:32 2022] Launched impl_1...
+Run output will be captured here: C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/impl_1/toplevel.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat May 28 18:27:06 2022] Launched synth_1...
+Run output will be captured here: C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/synth_1/runme.log
+[Sat May 28 18:27:06 2022] Launched impl_1...
+Run output will be captured here: C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat May 28 18:28:07 2022] Launched synth_1...
+Run output will be captured here: C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/synth_1/runme.log
+[Sat May 28 18:28:07 2022] Launched impl_1...
+Run output will be captured here: C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/impl_1/toplevel.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat May 28 18:42:04 2022] Launched synth_1...
+Run output will be captured here: C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/synth_1/runme.log
+[Sat May 28 18:42:04 2022] Launched impl_1...
+Run output will be captured here: C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/impl_1/toplevel.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/impl_1/toplevel.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+file mkdir C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sim_1/new/frogsim.v w ]
+add_files -fileset sim_1 C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sim_1/new/frogsim.v
+update_compile_order -fileset sim_1
+set_property top frogsim [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'frogsim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj frogsim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sources_1/new/16countfrog.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module count16frog
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sources_1/new/4countfrog.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fourcountfrog
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sources_1/new/frog.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module frog
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sim_1/new/frogsim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module frogsim
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim'
+"xelab -wto 9a07b6887ac24fbeb5756136ef7d1414 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot frogsim_behav xil_defaultlib.frogsim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 9a07b6887ac24fbeb5756136ef7d1414 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot frogsim_behav xil_defaultlib.frogsim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3180] cannot find port 'reseTime' on this module [C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sim_1/new/frogsim.v:43]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'frogsim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj frogsim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sources_1/new/16countfrog.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module count16frog
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sources_1/new/4countfrog.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fourcountfrog
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sources_1/new/frog.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module frog
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sim_1/new/frogsim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module frogsim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim'
+"xelab -wto 9a07b6887ac24fbeb5756136ef7d1414 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot frogsim_behav xil_defaultlib.frogsim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 9a07b6887ac24fbeb5756136ef7d1414 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot frogsim_behav xil_defaultlib.frogsim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 11 differs from formal bit length 1 for port 'dw' [C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sources_1/new/frog.v:72]
+WARNING: [VRFC 10-3091] actual bit length 11 differs from formal bit length 1 for port 'up' [C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sources_1/new/frog.v:74]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 16 for port 'sw' [C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sources_1/new/frog.v:77]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.FDRE_default
+Compiling module xil_defaultlib.fourcountfrog
+Compiling module xil_defaultlib.count16frog
+Compiling module unisims_ver.FDRE(INIT=1'b1)
+Compiling module xil_defaultlib.frog_default
+Compiling module xil_defaultlib.frogsim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot frogsim_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim/xsim.dir/frogsim_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim/xsim.dir/frogsim_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sat May 28 19:22:19 2022. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sat May 28 19:22:19 2022...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2614.488 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "frogsim_behav -key {Behavioral:sim_1:Functional:frogsim} -tclbatch {frogsim.tcl} -view {C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sim_1/imports/yokee/Lab7/testSyncs_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+open_wave_config C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sim_1/imports/yokee/Lab7/testSyncs_behav.wcfg
+WARNING: Simulation object /testSyncs/UUT/vga1/Hout was not found in the design.
+WARNING: Simulation object /testSyncs/UUT/vga1/Vout was not found in the design.
+WARNING: Simulation object /testSyncs/GUT/SERRORS was not found in the design.
+WARNING: Simulation object /testSyncs/GUT/sync_error was not found in the design.
+WARNING: Simulation object /testSyncs/GUT/myHS was not found in the design.
+WARNING: Simulation object /testSyncs/GUT/correct_HS was not found in the design.
+WARNING: Simulation object /testSyncs/GUT/myVS was not found in the design.
+WARNING: Simulation object /testSyncs/GUT/correct_VS was not found in the design.
+WARNING: Simulation object /testSyncs/RUT/RGBERRORS was not found in the design.
+WARNING: Simulation object /testSyncs/RUT/rgb_error was not found in the design.
+WARNING: Simulation object /testSyncs/UUT/r was not found in the design.
+WARNING: Simulation object /testSyncs/UUT/g was not found in the design.
+WARNING: Simulation object /testSyncs/UUT/b was not found in the design.
+WARNING: Simulation object /testSyncs/UUT/Hpix was not found in the design.
+WARNING: Simulation object /testSyncs/UUT/Vpix was not found in the design.
+WARNING: Simulation object /testSyncs/UUT/waterColor was not found in the design.
+WARNING: Simulation object /testSyncs/UUT/vga1/Hsync was not found in the design.
+WARNING: Simulation object /testSyncs/UUT/vga1/Vsync was not found in the design.
+WARNING: Simulation object /testSyncs/UUT/vga1/vgaR was not found in the design.
+WARNING: Simulation object /testSyncs/UUT/vga1/vgaG was not found in the design.
+WARNING: Simulation object /testSyncs/UUT/vga1/vgaB was not found in the design.
+WARNING: Simulation object /testSyncs/UUT/vga1/Hborder was not found in the design.
+WARNING: Simulation object /testSyncs/UUT/vga1/Vborder was not found in the design.
+WARNING: Simulation object /testSyncs/UUT/vga1/Hout was not found in the design.
+WARNING: Simulation object /testSyncs/UUT/vga1/Vout was not found in the design.
+WARNING: Simulation object /testSyncs/UUT/vgaR was not found in the design.
+WARNING: Simulation object /testSyncs/UUT/vgaG was not found in the design.
+WARNING: Simulation object /testSyncs/UUT/vgaB was not found in the design.
+WARNING: Simulation object /testSyncs/btnL was not found in the design.
+WARNING: Simulation object /testSyncs/btnR was not found in the design.
+WARNING: Simulation object /testSyncs/sw was not found in the design.
+WARNING: Simulation object /testSyncs/clkin was not found in the design.
+WARNING: Simulation object /testSyncs/an was not found in the design.
+WARNING: Simulation object /testSyncs/dp was not found in the design.
+WARNING: Simulation object /testSyncs/seg was not found in the design.
+WARNING: Simulation object /testSyncs/led was not found in the design.
+WARNING: Simulation object /testSyncs/HS was not found in the design.
+WARNING: Simulation object /testSyncs/vgaBlue was not found in the design.
+WARNING: Simulation object /testSyncs/vgaGreen was not found in the design.
+WARNING: Simulation object /testSyncs/vgaRed was not found in the design.
+WARNING: Simulation object /testSyncs/VS was not found in the design.
+WARNING: Simulation object /testSyncs/oops was not found in the design.
+WARNING: Simulation object /testSyncs/rgb_oops was not found in the design.
+WARNING: Simulation object /testSyncs/good_HS was not found in the design.
+WARNING: Simulation object /testSyncs/good_VS was not found in the design.
+WARNING: Simulation object /testSyncs/activeH was not found in the design.
+WARNING: Simulation object /testSyncs/activeV was not found in the design.
+WARNING: Simulation object /testSyncs/PERIOD was not found in the design.
+WARNING: Simulation object /testSyncs/DUTY_CYCLE was not found in the design.
+WARNING: Simulation object /testSyncs/OFFSET was not found in the design.
+source frogsim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 2614.488 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'frogsim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 2614.488 ; gain = 0.000
+run 10 us
+run 10 us
+run 10 ns
+run 10 ns
+run 10 ns
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'frogsim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj frogsim_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim'
+"xelab -wto 9a07b6887ac24fbeb5756136ef7d1414 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot frogsim_behav xil_defaultlib.frogsim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 9a07b6887ac24fbeb5756136ef7d1414 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot frogsim_behav xil_defaultlib.frogsim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 11 differs from formal bit length 1 for port 'dw' [C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sources_1/new/frog.v:72]
+WARNING: [VRFC 10-3091] actual bit length 11 differs from formal bit length 1 for port 'up' [C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sources_1/new/frog.v:74]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 16 for port 'sw' [C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sources_1/new/frog.v:77]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 2614.488 ; gain = 0.000
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'frogsim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj frogsim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sources_1/new/16countfrog.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module count16frog
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sources_1/new/4countfrog.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fourcountfrog
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sources_1/new/frog.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module frog
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sim_1/new/frogsim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module frogsim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim'
+"xelab -wto 9a07b6887ac24fbeb5756136ef7d1414 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot frogsim_behav xil_defaultlib.frogsim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 9a07b6887ac24fbeb5756136ef7d1414 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot frogsim_behav xil_defaultlib.frogsim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 11 differs from formal bit length 1 for port 'dw' [C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sources_1/new/frog.v:72]
+WARNING: [VRFC 10-3091] actual bit length 11 differs from formal bit length 1 for port 'up' [C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sources_1/new/frog.v:74]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 16 for port 'sw' [C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sources_1/new/frog.v:77]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.FDRE_default
+Compiling module xil_defaultlib.fourcountfrog
+Compiling module xil_defaultlib.count16frog
+Compiling module unisims_ver.FDRE(INIT=1'b1)
+Compiling module xil_defaultlib.frog_default
+Compiling module xil_defaultlib.frogsim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot frogsim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 2614.488 ; gain = 0.000
+run 10 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'frogsim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj frogsim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sources_1/new/16countfrog.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module count16frog
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sources_1/new/4countfrog.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fourcountfrog
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sources_1/new/frog.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module frog
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sim_1/new/frogsim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module frogsim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim'
+"xelab -wto 9a07b6887ac24fbeb5756136ef7d1414 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot frogsim_behav xil_defaultlib.frogsim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 9a07b6887ac24fbeb5756136ef7d1414 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot frogsim_behav xil_defaultlib.frogsim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 11 differs from formal bit length 1 for port 'dw' [C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sources_1/new/frog.v:72]
+WARNING: [VRFC 10-3091] actual bit length 11 differs from formal bit length 1 for port 'up' [C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sources_1/new/frog.v:74]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 16 for port 'sw' [C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sources_1/new/frog.v:77]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.FDRE_default
+Compiling module xil_defaultlib.fourcountfrog
+Compiling module xil_defaultlib.count16frog
+Compiling module unisims_ver.FDRE(INIT=1'b1)
+Compiling module xil_defaultlib.frog_default
+Compiling module xil_defaultlib.frogsim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot frogsim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 2614.488 ; gain = 0.000
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat May 28 19:31:08 2022] Launched synth_1...
+Run output will be captured here: C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/synth_1/runme.log
+[Sat May 28 19:31:08 2022] Launched impl_1...
+Run output will be captured here: C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/impl_1/runme.log
+relaunch_sim
+boost::filesystem::remove: The process cannot access the file because it is being used by another process: "C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim/simulate.log"
+INFO: [Common 17-17] undo 'relaunch_sim'
+INFO: [Common 17-17] undo 'relaunch_sim'
+ERROR: [Common 17-69] Command failed: boost::filesystem::remove: The process cannot access the file because it is being used by another process: "C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim/simulate.log"
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.runs/impl_1/toplevel.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'frogsim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj frogsim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sources_1/new/16countfrog.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module count16frog
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sources_1/new/4countfrog.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fourcountfrog
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sources_1/new/frog.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module frog
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sim_1/new/frogsim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module frogsim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim'
+"xelab -wto 9a07b6887ac24fbeb5756136ef7d1414 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot frogsim_behav xil_defaultlib.frogsim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 9a07b6887ac24fbeb5756136ef7d1414 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot frogsim_behav xil_defaultlib.frogsim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 16 for port 'sw' [C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sources_1/new/frog.v:77]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.FDRE_default
+Compiling module xil_defaultlib.fourcountfrog
+Compiling module xil_defaultlib.count16frog
+Compiling module unisims_ver.FDRE(INIT=1'b1)
+Compiling module xil_defaultlib.frog_default
+Compiling module xil_defaultlib.frogsim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot frogsim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 2614.488 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'frogsim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj frogsim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sources_1/new/16countfrog.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module count16frog
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sources_1/new/4countfrog.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fourcountfrog
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sources_1/new/frog.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module frog
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sim_1/new/frogsim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module frogsim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim'
+"xelab -wto 9a07b6887ac24fbeb5756136ef7d1414 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot frogsim_behav xil_defaultlib.frogsim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 9a07b6887ac24fbeb5756136ef7d1414 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot frogsim_behav xil_defaultlib.frogsim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 16 for port 'sw' [C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sources_1/new/frog.v:77]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.FDRE_default
+Compiling module xil_defaultlib.fourcountfrog
+Compiling module xil_defaultlib.count16frog
+Compiling module unisims_ver.FDRE(INIT=1'b1)
+Compiling module xil_defaultlib.frog_default
+Compiling module xil_defaultlib.frogsim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot frogsim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 2614.488 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'frogsim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj frogsim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sources_1/new/16countfrog.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module count16frog
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sources_1/new/4countfrog.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fourcountfrog
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sources_1/new/frog.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module frog
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sim_1/new/frogsim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module frogsim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim'
+"xelab -wto 9a07b6887ac24fbeb5756136ef7d1414 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot frogsim_behav xil_defaultlib.frogsim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 9a07b6887ac24fbeb5756136ef7d1414 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot frogsim_behav xil_defaultlib.frogsim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 16 for port 'sw' [C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sources_1/new/frog.v:77]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.FDRE_default
+Compiling module xil_defaultlib.fourcountfrog
+Compiling module xil_defaultlib.count16frog
+Compiling module unisims_ver.FDRE(INIT=1'b1)
+Compiling module xil_defaultlib.frog_default
+Compiling module xil_defaultlib.frogsim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot frogsim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 2614.488 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'frogsim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj frogsim_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim'
+"xelab -wto 9a07b6887ac24fbeb5756136ef7d1414 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot frogsim_behav xil_defaultlib.frogsim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 9a07b6887ac24fbeb5756136ef7d1414 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot frogsim_behav xil_defaultlib.frogsim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 16 for port 'sw' [C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sources_1/new/frog.v:77]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_xsim_kernel: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 2614.488 ; gain = 0.000
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 2614.488 ; gain = 0.000
+run 100 ns
+run 100 ns
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'frogsim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj frogsim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sources_1/new/16countfrog.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module count16frog
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sources_1/new/4countfrog.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fourcountfrog
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sources_1/new/frog.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module frog
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sim_1/new/frogsim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module frogsim
+WARNING: [VRFC 10-3248] data object 'twosec' is already declared [C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sim_1/new/frogsim.v:26]
+ERROR: [VRFC 10-3703] second declaration of 'twosec' ignored [C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sim_1/new/frogsim.v:26]
+ERROR: [VRFC 10-2865] module 'frogsim' ignored due to previous errors [C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sim_1/new/frogsim.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'frogsim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj frogsim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sources_1/new/16countfrog.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module count16frog
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sources_1/new/4countfrog.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fourcountfrog
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sources_1/new/frog.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module frog
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sim_1/new/frogsim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module frogsim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim'
+"xelab -wto 9a07b6887ac24fbeb5756136ef7d1414 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot frogsim_behav xil_defaultlib.frogsim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 9a07b6887ac24fbeb5756136ef7d1414 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot frogsim_behav xil_defaultlib.frogsim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 16 for port 'sw' [C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sources_1/new/frog.v:77]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.FDRE_default
+Compiling module xil_defaultlib.fourcountfrog
+Compiling module xil_defaultlib.count16frog
+Compiling module unisims_ver.FDRE(INIT=1'b1)
+Compiling module xil_defaultlib.frog_default
+Compiling module xil_defaultlib.frogsim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot frogsim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 2734.516 ; gain = 0.000
+run 100 ns
+run 100 ns
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'frogsim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj frogsim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sources_1/new/16countfrog.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module count16frog
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sources_1/new/4countfrog.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fourcountfrog
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sources_1/new/frog.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module frog
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sim_1/new/frogsim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module frogsim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim'
+"xelab -wto 9a07b6887ac24fbeb5756136ef7d1414 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot frogsim_behav xil_defaultlib.frogsim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 9a07b6887ac24fbeb5756136ef7d1414 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot frogsim_behav xil_defaultlib.frogsim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 16 for port 'sw' [C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sources_1/new/frog.v:77]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.FDRE_default
+Compiling module xil_defaultlib.fourcountfrog
+Compiling module xil_defaultlib.count16frog
+Compiling module unisims_ver.FDRE(INIT=1'b1)
+Compiling module xil_defaultlib.frog_default
+Compiling module xil_defaultlib.frogsim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot frogsim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 2734.516 ; gain = 0.000
+run 100 ns
+run 100 ns
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'frogsim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj frogsim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sources_1/new/16countfrog.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module count16frog
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sources_1/new/4countfrog.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fourcountfrog
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sources_1/new/frog.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module frog
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sim_1/new/frogsim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module frogsim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim'
+"xelab -wto 9a07b6887ac24fbeb5756136ef7d1414 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot frogsim_behav xil_defaultlib.frogsim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 9a07b6887ac24fbeb5756136ef7d1414 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot frogsim_behav xil_defaultlib.frogsim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 16 for port 'sw' [C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sources_1/new/frog.v:77]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.FDRE_default
+Compiling module xil_defaultlib.fourcountfrog
+Compiling module xil_defaultlib.count16frog
+Compiling module unisims_ver.FDRE(INIT=1'b1)
+Compiling module xil_defaultlib.frog_default
+Compiling module xil_defaultlib.frogsim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot frogsim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 2734.516 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'frogsim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj frogsim_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim'
+"xelab -wto 9a07b6887ac24fbeb5756136ef7d1414 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot frogsim_behav xil_defaultlib.frogsim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 9a07b6887ac24fbeb5756136ef7d1414 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot frogsim_behav xil_defaultlib.frogsim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 16 for port 'sw' [C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sources_1/new/frog.v:77]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 2734.516 ; gain = 0.000
+run 100 ns
+run 100 ns
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'frogsim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj frogsim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sources_1/new/16countfrog.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module count16frog
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sources_1/new/4countfrog.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fourcountfrog
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sources_1/new/frog.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module frog
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sim_1/new/frogsim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module frogsim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.sim/sim_1/behav/xsim'
+"xelab -wto 9a07b6887ac24fbeb5756136ef7d1414 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot frogsim_behav xil_defaultlib.frogsim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 9a07b6887ac24fbeb5756136ef7d1414 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot frogsim_behav xil_defaultlib.frogsim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 16 for port 'sw' [C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sources_1/new/frog.v:77]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.FDRE_default
+Compiling module xil_defaultlib.fourcountfrog
+Compiling module xil_defaultlib.count16frog
+Compiling module unisims_ver.FDRE(INIT=1'b1)
+Compiling module xil_defaultlib.frog_default
+Compiling module xil_defaultlib.frogsim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot frogsim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 2734.516 ; gain = 0.000
+run 100 ns
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A2835AA
+archive_project C:/Users/dlee154/Downloads/Lab7.xpr/Lab7.xpr.zip -temp_dir C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/.Xil/Vivado-9248-BELSPC0007 -force -include_local_ip_cache
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/.Xil/Vivado-9248-BELSPC0007' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+INFO: [Coretcl 2-1209] Adding archive summary file to the project...
+INFO: [Coretcl 2-1214] Preparing project files for archive...
+INFO: [Coretcl 2-1210] Compressing project files and data...
+INFO: [Coretcl 2-1215] Project archived (C:/Users/dlee154/Downloads/Lab7.xpr/Lab7.xpr.zip)
+INFO: [Coretcl 2-1216] To view the archive summary log in GUI, double click on 'Design Sources->Text->archive_project_summary.txt', or open this file from the archived project directory.
+archive_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 2734.516 ; gain = 0.000
+save_wave_config {C:/Users/dlee154/Downloads/Lab7.xpr/Lab7/Lab7.srcs/sim_1/imports/yokee/Lab7/testSyncs_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat May 28 20:00:50 2022...

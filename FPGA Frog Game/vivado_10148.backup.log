@@ -1,0 +1,183 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu May 26 14:34:50 2022
+# Process ID: 10148
+# Current directory: C:/Users/yokee/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22760
+# Log file: C:/Users/yokee/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/Users/yokee/AppData/Roaming/Xilinx/Vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/yokee/Lab7/Lab7.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 841.852 ; gain = 167.633
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu May 26 14:35:58 2022] Launched synth_1...
+Run output will be captured here: C:/Users/yokee/Lab7/Lab7.runs/synth_1/runme.log
+[Thu May 26 14:35:58 2022] Launched impl_1...
+Run output will be captured here: C:/Users/yokee/Lab7/Lab7.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A89BDFA
+set_property PROGRAM.FILE {C:/Users/yokee/Lab7/Lab7.runs/impl_1/toplevel.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/yokee/Lab7/Lab7.runs/impl_1/toplevel.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu May 26 14:57:10 2022] Launched synth_1...
+Run output will be captured here: C:/Users/yokee/Lab7/Lab7.runs/synth_1/runme.log
+[Thu May 26 14:57:10 2022] Launched impl_1...
+Run output will be captured here: C:/Users/yokee/Lab7/Lab7.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/yokee/Lab7/Lab7.runs/impl_1/toplevel.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu May 26 15:01:10 2022] Launched synth_1...
+Run output will be captured here: C:/Users/yokee/Lab7/Lab7.runs/synth_1/runme.log
+[Thu May 26 15:01:10 2022] Launched impl_1...
+Run output will be captured here: C:/Users/yokee/Lab7/Lab7.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/yokee/Lab7/Lab7.runs/impl_1/toplevel.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu May 26 16:07:24 2022] Launched synth_1...
+Run output will be captured here: C:/Users/yokee/Lab7/Lab7.runs/synth_1/runme.log
+[Thu May 26 16:07:24 2022] Launched impl_1...
+Run output will be captured here: C:/Users/yokee/Lab7/Lab7.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/yokee/Lab7/Lab7.runs/impl_1/toplevel.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu May 26 16:12:23 2022] Launched synth_1...
+Run output will be captured here: C:/Users/yokee/Lab7/Lab7.runs/synth_1/runme.log
+[Thu May 26 16:12:23 2022] Launched impl_1...
+Run output will be captured here: C:/Users/yokee/Lab7/Lab7.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/yokee/Lab7/Lab7.runs/impl_1/toplevel.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu May 26 16:14:44 2022] Launched synth_1...
+Run output will be captured here: C:/Users/yokee/Lab7/Lab7.runs/synth_1/runme.log
+[Thu May 26 16:14:44 2022] Launched impl_1...
+Run output will be captured here: C:/Users/yokee/Lab7/Lab7.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/yokee/Lab7/Lab7.runs/impl_1/toplevel.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu May 26 16:19:24 2022] Launched synth_1...
+Run output will be captured here: C:/Users/yokee/Lab7/Lab7.runs/synth_1/runme.log
+[Thu May 26 16:19:24 2022] Launched impl_1...
+Run output will be captured here: C:/Users/yokee/Lab7/Lab7.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/yokee/Lab7/Lab7.runs/impl_1/toplevel.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A89BDFA
+close [ open C:/Users/yokee/Lab7/Lab7.srcs/sources_1/new/frogMovement.v w ]
+add_files C:/Users/yokee/Lab7/Lab7.srcs/sources_1/new/frogMovement.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/yokee/Lab7/Lab7.srcs/sources_1/new/m2_1x8.v w ]
+add_files C:/Users/yokee/Lab7/Lab7.srcs/sources_1/new/m2_1x8.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open C:/Users/yokee/Lab7/Lab7.srcs/sources_1/new/4countfrog.v w ]
+add_files C:/Users/yokee/Lab7/Lab7.srcs/sources_1/new/4countfrog.v
+close [ open C:/Users/yokee/Lab7/Lab7.srcs/sources_1/new/16countfrog.v w ]
+add_files C:/Users/yokee/Lab7/Lab7.srcs/sources_1/new/16countfrog.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open C:/Users/yokee/Lab7/Lab7.srcs/sources_1/new/timeCounter.v w ]
+add_files C:/Users/yokee/Lab7/Lab7.srcs/sources_1/new/timeCounter.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/yokee/Lab7/Lab7.srcs/sources_1/new/upCounter.v w ]
+add_files C:/Users/yokee/Lab7/Lab7.srcs/sources_1/new/upCounter.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat May 28 13:38:35 2022] Launched synth_1...
+Run output will be captured here: C:/Users/yokee/Lab7/Lab7.runs/synth_1/runme.log
+[Sat May 28 13:38:35 2022] Launched impl_1...
+Run output will be captured here: C:/Users/yokee/Lab7/Lab7.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat May 28 13:39:45 2022] Launched synth_1...
+Run output will be captured here: C:/Users/yokee/Lab7/Lab7.runs/synth_1/runme.log
+[Sat May 28 13:39:45 2022] Launched impl_1...
+Run output will be captured here: C:/Users/yokee/Lab7/Lab7.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat May 28 13:40:39 2022] Launched synth_1...
+Run output will be captured here: C:/Users/yokee/Lab7/Lab7.runs/synth_1/runme.log
+[Sat May 28 13:40:39 2022] Launched impl_1...
+Run output will be captured here: C:/Users/yokee/Lab7/Lab7.runs/impl_1/runme.log
+archive_project C:/Users/yokee/Lab7.xpr.zip -temp_dir C:/Users/yokee/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-10148-DESKTOP-IGECIF9 -force -include_local_ip_cache
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/yokee/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-10148-DESKTOP-IGECIF9' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
+Current project path is 'C:/Users/yokee/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-10148-DESKTOP-IGECIF9/PrjAr/_X_'.
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
